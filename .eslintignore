@@ -1,0 +1,4 @@
+**.d.ts
+/packages/stellarnovaui
+dist
+node_modules

@@ -1,0 +1,17 @@
+{
+  "name": "@stellarnovaui/components",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stellarnovaui/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.2"
+  }
+}
