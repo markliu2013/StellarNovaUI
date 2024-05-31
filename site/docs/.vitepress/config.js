@@ -47,6 +47,10 @@ export default {
               text: 'Button',
               link: '/components/button/'
             },
+            {
+              text: 'Message',
+              link: '/components/message/'
+            },
           ]
         }
       ]

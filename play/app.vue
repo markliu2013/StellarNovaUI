@@ -5,5 +5,11 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { Button } from '@stellarnovaui/components';
+import { Button, Message } from '@stellarnovaui/components';
+import {onMounted} from "@vue/runtime-core";
+
+onMounted(() => {
+  Message.success('Success')
+})
+
 </script>

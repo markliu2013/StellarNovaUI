@@ -1,0 +1,101 @@
+@radius: 4px;
+@normalHeight: 34px;
+
+.message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 9999;
+  transform: translateZ(9999px);
+  padding-top: 28px;
+  transition: top 0.4s ease;
+
+  .message-container {
+    margin-bottom: 14px;
+
+    .message-content {
+      display: inline-block;
+      padding: 0 18px;
+      height: @normalHeight;
+      text-align: left;
+      line-height: @normalHeight;
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: @radius;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(
+              91.26deg,
+              #fadf89 0.51%,
+              #e4c7aa 50.6%,
+              #c6822f 99.39%
+      );
+
+      .option {
+        display: inline-block;
+        pointer-events: all;
+        margin-left: 18px;
+
+        i {
+          font-size: 18px;
+          font-weight: 400;
+          margin-top: -3px;
+          display: inline-block;
+          box-sizing: border-box;
+          vertical-align: middle;
+          cursor: pointer;
+          color: #d9d9d9;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #ff7c75;
+            transition: color 0.2s ease;
+          }
+        }
+      }
+    }
+
+    .message-icon {
+      display: inline-block;
+
+      i {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: -3px;
+        margin-right: 6px;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: middle;
+      }
+
+      .ri-checkbox-circle-fill {
+        color: #58c05b;
+      }
+
+      .ri-close-circle-fill {
+        color: #fd4f4d;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        -webkit-mask-image: url('close-circle-fill.svg');
+        mask-image: url('close-circle-fill.svg');
+      }
+    }
+  }
+}
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-50px);
+  opacity: 0;
+}
