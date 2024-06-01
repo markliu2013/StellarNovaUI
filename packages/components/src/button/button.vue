@@ -1,9 +1,3 @@
-<template>
-  <button class="sn-button" :class="buttonStyle">
-    <slot />
-  </button>
-</template>
-
 <script lang="ts" setup>
 import './style/index.less';
 import { computed } from 'vue';
@@ -18,3 +12,9 @@ const buttonStyle = computed(() => {
   return { [`sn-button--${buttonProps.type}`]: buttonProps.type };
 });
 </script>
+
+<template>
+  <button class="sn-button" :class="buttonStyle">
+    <slot />
+  </button>
+</template>

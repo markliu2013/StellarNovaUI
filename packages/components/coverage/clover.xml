@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1717030485697" clover="3.2.0">
+  <project timestamp="1717030485697" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0" elements="21" coveredelements="21" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="button.vue" path="E:\Work\StellarNovaUI\packages\components\src\button\button.vue">
+      <metrics statements="20" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

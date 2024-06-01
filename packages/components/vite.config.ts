@@ -40,11 +40,13 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      entryRoot: 'src',
+      // entryRoot: 'src',
       outputDir: ['../stellarnovaui/es/src', '../stellarnovaui/lib/src'],
       //Specify the tsconfig.json to be used is under our entire project root directory.
       //If not configured, you can also create a new tsconfig.json under the components directory.
-      tsConfigFilePath: '../../tsconfig.json'
+      tsConfigFilePath: '../../tsconfig.json',
+      include: ['./src/**/*.ts', './src/**/*.vue'],
+      exclude: ['./src/**/message-item.vue'],
     }),
     DefineOptions(),
     {

@@ -3,7 +3,7 @@ import chalk from 'chalk';
 import ora from 'ora';
 
 export default (remote, name, option) => {
-  const downSpinner = ora('Downloading template...').start();
+  const downSpinner = ora(`Downloading template...${remote}`).start();
   return new Promise((resolve, reject) => {
     download(remote, name, option, (err) => {
       if (err) {
